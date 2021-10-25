@@ -1,0 +1,4 @@
+web: RAILS_ENV=development PORT=3000 bundle exec puma -C config/puma.rb
+redis: redis-server
+log: tail -f log/development.log
+webpacker: ./bin/webpack-dev-server

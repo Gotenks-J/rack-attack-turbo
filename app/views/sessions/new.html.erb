@@ -1,0 +1,7 @@
+<%= form_tag sessions_path do %>
+  <%= button_tag "Login" %>
+
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end %>
+<% end %>
